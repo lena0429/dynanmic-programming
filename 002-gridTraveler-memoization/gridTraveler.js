@@ -9,6 +9,7 @@ const gridTraveler = (m, n, memo={}) => {
      if ( m === 0 || n === 1) return 0;
 
      // going downward and going rightward
+     // make sure you pass down the memo to ALL RECURSIVE CALLS!!!
      memo[key] = gridTraveler(m - 1, n, memo) + gridTraveler(m, n - 1, memo)
      return memo[key]
 }

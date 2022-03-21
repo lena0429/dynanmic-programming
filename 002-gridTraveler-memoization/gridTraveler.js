@@ -6,7 +6,7 @@ const gridTraveler = (m, n, memo={}) => {
     // one base case is when we have a one by one grid, return 1
     // another base case is row or column is zero, which means an empty grid
      if ( m === 1 && n === 1) return 1;
-     if ( m === 0 || n === 1) return 0;
+     if ( m === 0 || n === 0) return 0;
 
      // going downward and going rightward
      // make sure you pass down the memo to ALL RECURSIVE CALLS!!!

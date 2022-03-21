@@ -1,5 +1,5 @@
 const fibTabulation = (n) => {
-    const table = Array(n + 1).fill(0); // becase indices strat at 0;
+    const table = Array(n + 1).fill(0); // because indices start at 0;
     table[1] = 1;
 
     for (let i = 0; i <= n; i++) {
@@ -9,11 +9,18 @@ const fibTabulation = (n) => {
     return table[n];
 }
 
-console.log(fib(6));
-console.log(fib(7));
-console.log(fib(8));
-console.log(fib(50));
+console.log(fibTabulation(6));
+console.log(fibTabulation(7));
+console.log(fibTabulation(8));
+console.log(fibTabulation(50));
 
 
 // O(n) time
 // O(n) space
+
+const fib = (n) => {
+    if (0 < n <= 2) return 1;
+    
+    const result = fib[n - 1] + fib[n - 2]
+    return result
+}
